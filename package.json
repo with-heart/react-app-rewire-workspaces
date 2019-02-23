@@ -1,0 +1,9 @@
+{
+  "name": "react-app-rewire-workspaces",
+  "version": "0.0.1",
+  "description": "react-app-rewired module enabling yarn workspaces",
+  "main": "dist/index.js",
+  "repository": "https://github.com/with-heart/react-app-rewire-workspaces",
+  "author": "Mark Chandler",
+  "license": "MIT"
+}
