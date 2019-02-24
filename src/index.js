@@ -4,7 +4,7 @@ import workspaces from './workspaces'
 
 const workspacesConfig = workspaces.init(paths)
 
-const enableMonorepo = () => (config, env) => {
+const enableWorkspaces = () => (config, env) => {
   const isEnvDevelopment = env === 'development'
   const isEnvProduction = env === 'production'
 
@@ -29,4 +29,4 @@ const enableMonorepo = () => (config, env) => {
   return config
 }
 
-module.exports = enableMonorepo
+module.exports = enableWorkspaces
