@@ -1,6 +1,6 @@
 import paths from 'react-scripts/config/paths'
 import {setLintInclude, setBabelInclude, setMainFields} from './webpack'
-import workspaces from './workspaces'
+import * as workspaces from './workspaces'
 
 const workspacesConfig = workspaces.init(paths)
 

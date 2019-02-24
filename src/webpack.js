@@ -1,4 +1,4 @@
-function setLintInclude(config, include) {
+export function setLintInclude(config, include) {
   // Find the eslint loader
   const condition = u =>
     typeof u === 'object' && u.loader && u.loader.includes('eslint-loader')
@@ -18,7 +18,7 @@ function setLintInclude(config, include) {
   return config
 }
 
-function setBabelInclude(config, include) {
+export function setBabelInclude(config, include) {
   // Find the babel loader
   const babelLoaderFilter = rule =>
     rule.loader &&
@@ -48,14 +48,8 @@ function setBabelInclude(config, include) {
   return config
 }
 
-function setMainFields(config, mainFields) {
+export function setMainFields(config, mainFields) {
   const resolve = config.resolve
   resolve.mainFields = mainFields
   return config
-}
-
-module.exports = {
-  setLintInclude,
-  setBabelInclude,
-  setMainFields,
 }

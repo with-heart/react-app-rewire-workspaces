@@ -119,7 +119,7 @@ const guard = (appDirectory, appPackageJson) => {
   }
 }
 
-const init = paths => {
+export const init = paths => {
   guard(paths.appPath, paths.appPackageJson)
 
   const config = {
@@ -181,8 +181,4 @@ const init = paths => {
   console.log(config)
 
   return config
-}
-
-module.exports = {
-  init,
 }
