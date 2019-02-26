@@ -1,4 +1,4 @@
-import paths from 'react-scripts/config/paths'
+import {paths} from 'react-app-rewired'
 import {setLintInclude, setBabelInclude, setMainFields} from './webpack'
 import * as workspaces from './workspaces'
 

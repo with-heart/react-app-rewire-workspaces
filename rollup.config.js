@@ -4,7 +4,7 @@ import pkg from './package.json'
 export default [
   {
     input: 'src/index.js',
-    external: ['react-scripts/config/paths'],
+    external: ['react-app-rewired'],
     plugins: [terser()],
     output: [{file: pkg.main, format: 'cjs'}],
   },
